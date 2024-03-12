@@ -67,7 +67,7 @@ pipeline {
         }
         success {
             script {
-                slackSend channel: '#class-chat', color: '#439FE0', message: 'Mission Complete :)', teamDomain: 'devops15tr', tokenCredentialId: 'Slack-Cred'
+                slackSend channel: '#class-chat', color: '#439FE0', message: 'Gec olsun guc olmasin', teamDomain: 'devops15tr', tokenCredentialId: 'Jenkins-Slack'
             }
         }
     }
