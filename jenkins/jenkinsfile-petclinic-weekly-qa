@@ -65,5 +65,10 @@ pipeline {
             echo 'Deleting all local images'
             sh 'docker image prune -af'
         }
+        success {
+            script {
+                slackSend channel: '#class-chat', color: '#439FE0', message: 'Mission Complete :)', teamDomain: 'devops15tr', tokenCredentialId: 'Slack-Cred'
+            }
+        }
     }
 }
